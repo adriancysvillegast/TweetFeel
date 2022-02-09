@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+//        active Keyboard
+        IQKeyboardManager.shared.enable = true
+//        desactive autotoolbar
+        IQKeyboardManager.shared.enableAutoToolbar = false
+//        resing the keyboard(quitar el teclado cuando se toca fuera del teclado)
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         return true
     }
 

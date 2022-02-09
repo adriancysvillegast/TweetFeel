@@ -13,7 +13,64 @@
 		09FC05F527AC1048008A5051 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FC05F327AC1048008A5051 /* Main.storyboard */; };
 		09FC05F727AC104C008A5051 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09FC05F627AC104C008A5051 /* Assets.xcassets */; };
 		09FC05FA27AC104C008A5051 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09FC05F827AC104C008A5051 /* LaunchScreen.storyboard */; };
+		09FC060227AC1131008A5051 /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 09FC060127AC1131008A5051 /* TweetSentimentClassifier.mlmodel */; };
+		09FC064727ACA9B1008A5051 /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09FC063E27ACA99A008A5051 /* SwifteriOS.framework */; };
+		09FC064827ACA9B1008A5051 /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 09FC063E27ACA99A008A5051 /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		09FC064F27ACD08C008A5051 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 09FC064E27ACD08C008A5051 /* IQKeyboardManagerSwift */; };
+		AD536BEE4FD843B1A2DF7063 /* Pods_TweetFeel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 762CE63E4BAC00C7094090BC /* Pods_TweetFeel.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09FC063D27ACA99A008A5051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09FC063527ACA99A008A5051 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		09FC063F27ACA99A008A5051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09FC063527ACA99A008A5051 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		09FC064127ACA99A008A5051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09FC063527ACA99A008A5051 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		09FC064327ACA99A008A5051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09FC063527ACA99A008A5051 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		09FC064527ACA99A008A5051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09FC063527ACA99A008A5051 /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09FC062F27AC4248008A5051 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				09FC064827ACA9B1008A5051 /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		09FC05EA27AC1048008A5051 /* TweetFeel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TweetFeel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +81,11 @@
 		09FC05F627AC104C008A5051 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09FC05F927AC104C008A5051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09FC05FB27AC104C008A5051 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09FC060127AC1131008A5051 /* TweetSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetSentimentClassifier.mlmodel; sourceTree = "<group>"; };
+		09FC063527ACA99A008A5051 /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../../../Desktop/Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		762CE63E4BAC00C7094090BC /* Pods_TweetFeel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TweetFeel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BF7025AEFA48FFD16E106EC /* Pods-TweetFeel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetFeel.release.xcconfig"; path = "Target Support Files/Pods-TweetFeel/Pods-TweetFeel.release.xcconfig"; sourceTree = "<group>"; };
+		8FA0A6FB120C7F1936E66A75 /* Pods-TweetFeel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TweetFeel.debug.xcconfig"; path = "Target Support Files/Pods-TweetFeel/Pods-TweetFeel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09FC064727ACA9B1008A5051 /* SwifteriOS.framework in Frameworks */,
+				AD536BEE4FD843B1A2DF7063 /* Pods_TweetFeel.framework in Frameworks */,
+				09FC064F27ACD08C008A5051 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +105,11 @@
 		09FC05E127AC1048008A5051 = {
 			isa = PBXGroup;
 			children = (
+				09FC063527ACA99A008A5051 /* Swifter.xcodeproj */,
 				09FC05EC27AC1048008A5051 /* TweetFeel */,
 				09FC05EB27AC1048008A5051 /* Products */,
+				09FC062C27AC4248008A5051 /* Frameworks */,
+				ED2DEB5B5F76FFDB8AF25FA2 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +131,38 @@
 				09FC05F627AC104C008A5051 /* Assets.xcassets */,
 				09FC05F827AC104C008A5051 /* LaunchScreen.storyboard */,
 				09FC05FB27AC104C008A5051 /* Info.plist */,
+				09FC060127AC1131008A5051 /* TweetSentimentClassifier.mlmodel */,
 			);
 			path = TweetFeel;
+			sourceTree = "<group>";
+		};
+		09FC062C27AC4248008A5051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				762CE63E4BAC00C7094090BC /* Pods_TweetFeel.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09FC063627ACA99A008A5051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09FC063E27ACA99A008A5051 /* SwifteriOS.framework */,
+				09FC064027ACA99A008A5051 /* SwifterMac.framework */,
+				09FC064227ACA99A008A5051 /* SwifterDemoiOS.app */,
+				09FC064427ACA99A008A5051 /* SwifterDemoMac.app */,
+				09FC064627ACA99A008A5051 /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED2DEB5B5F76FFDB8AF25FA2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8FA0A6FB120C7F1936E66A75 /* Pods-TweetFeel.debug.xcconfig */,
+				8BF7025AEFA48FFD16E106EC /* Pods-TweetFeel.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,15 +172,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 09FC05FE27AC104C008A5051 /* Build configuration list for PBXNativeTarget "TweetFeel" */;
 			buildPhases = (
+				EF32951144FAA35823AE71F9 /* [CP] Check Pods Manifest.lock */,
 				09FC05E627AC1048008A5051 /* Sources */,
 				09FC05E727AC1048008A5051 /* Frameworks */,
 				09FC05E827AC1048008A5051 /* Resources */,
+				09FC062F27AC4248008A5051 /* Embed Frameworks */,
+				2E83A2CB66CD3669C789A7B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = TweetFeel;
+			packageProductDependencies = (
+				09FC064E27ACD08C008A5051 /* IQKeyboardManagerSwift */,
+			);
 			productName = TweetFeel;
 			productReference = 09FC05EA27AC1048008A5051 /* TweetFeel.app */;
 			productType = "com.apple.product-type.application";
@@ -111,14 +215,61 @@
 				Base,
 			);
 			mainGroup = 09FC05E127AC1048008A5051;
+			packageReferences = (
+				09FC064D27ACD08C008A5051 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 09FC05EB27AC1048008A5051 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 09FC063627ACA99A008A5051 /* Products */;
+					ProjectRef = 09FC063527ACA99A008A5051 /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				09FC05E927AC1048008A5051 /* TweetFeel */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		09FC063E27ACA99A008A5051 /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 09FC063D27ACA99A008A5051 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09FC064027ACA99A008A5051 /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 09FC063F27ACA99A008A5051 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09FC064227ACA99A008A5051 /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 09FC064127ACA99A008A5051 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09FC064427ACA99A008A5051 /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 09FC064327ACA99A008A5051 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		09FC064627ACA99A008A5051 /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 09FC064527ACA99A008A5051 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		09FC05E827AC1048008A5051 /* Resources */ = {
@@ -133,6 +284,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2E83A2CB66CD3669C789A7B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TweetFeel/Pods-TweetFeel-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TweetFeel/Pods-TweetFeel-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TweetFeel/Pods-TweetFeel-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF32951144FAA35823AE71F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TweetFeel-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		09FC05E627AC1048008A5051 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +333,7 @@
 			files = (
 				09FC05F227AC1048008A5051 /* ViewController.swift in Sources */,
 				09FC05EE27AC1048008A5051 /* AppDelegate.swift in Sources */,
+				09FC060227AC1131008A5051 /* TweetSentimentClassifier.mlmodel in Sources */,
 				09FC05F027AC1048008A5051 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +478,7 @@
 		};
 		09FC05FF27AC104C008A5051 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FA0A6FB120C7F1936E66A75 /* Pods-TweetFeel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +507,7 @@
 		};
 		09FC060027AC104C008A5051 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF7025AEFA48FFD16E106EC /* Pods-TweetFeel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -360,6 +556,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09FC064D27ACD08C008A5051 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09FC064E27ACD08C008A5051 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09FC064D27ACD08C008A5051 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09FC05E227AC1048008A5051 /* Project object */;
 }

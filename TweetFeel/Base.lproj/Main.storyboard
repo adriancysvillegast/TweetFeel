@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +11,91 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TweetFeel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="29t-E5-ORl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="viQ-KW-1ni">
+                                        <rect key="frame" x="0.0" y="726" width="414" height="130"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a Username or Hashtag" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e8e-nr-Vm0">
+                                                <rect key="frame" x="20" y="0.0" width="374" height="60"/>
+                                                <color key="backgroundColor" name="TextfieldBackground"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="IgS-fg-v6q"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGl-Em-RNB">
+                                                <rect key="frame" x="122" y="80" width="170" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="170" id="Qzt-4o-Zsb"/>
+                                                    <constraint firstAttribute="height" constant="50" id="wC9-qh-Tcf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Prediction">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="20"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R96-HM-h5X"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="e8e-nr-Vm0" firstAttribute="leading" secondItem="viQ-KW-1ni" secondAttribute="leading" constant="20" id="1sT-oz-U7o"/>
+                                            <constraint firstAttribute="trailing" secondItem="e8e-nr-Vm0" secondAttribute="trailing" constant="20" id="CWY-9M-HX4"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😡" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3aJ-QE-1za">
+                                        <rect key="frame" x="80" y="65" width="254" height="636"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="120"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Background"/>
+                                <constraints>
+                                    <constraint firstItem="3aJ-QE-1za" firstAttribute="top" secondItem="29t-E5-ORl" secondAttribute="top" constant="65" id="3fO-bk-1sf"/>
+                                    <constraint firstAttribute="trailing" secondItem="viQ-KW-1ni" secondAttribute="trailing" id="7kn-gX-mxP"/>
+                                    <constraint firstAttribute="bottom" secondItem="viQ-KW-1ni" secondAttribute="bottom" constant="40" id="BPn-s6-AvN"/>
+                                    <constraint firstItem="viQ-KW-1ni" firstAttribute="top" secondItem="3aJ-QE-1za" secondAttribute="bottom" constant="25" id="H7r-7N-pwa"/>
+                                    <constraint firstAttribute="trailing" secondItem="3aJ-QE-1za" secondAttribute="trailing" constant="80" id="YHA-Z0-0EB"/>
+                                    <constraint firstItem="3aJ-QE-1za" firstAttribute="leading" secondItem="29t-E5-ORl" secondAttribute="leading" constant="80" id="otL-Nu-eGn"/>
+                                    <constraint firstItem="viQ-KW-1ni" firstAttribute="leading" secondItem="29t-E5-ORl" secondAttribute="leading" id="qup-e7-nO2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="29t-E5-ORl" secondAttribute="trailing" id="1Qn-pb-I2C"/>
+                            <constraint firstItem="29t-E5-ORl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9wu-kx-s89"/>
+                            <constraint firstItem="29t-E5-ORl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Trg-ew-GwC"/>
+                            <constraint firstAttribute="bottom" secondItem="29t-E5-ORl" secondAttribute="bottom" id="zLl-z4-HDC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="buttonLabel" destination="rGl-Em-RNB" id="7cI-N6-ZsY"/>
+                        <outlet property="emotionLabel" destination="3aJ-QE-1za" id="9ht-Ef-IV1"/>
+                        <outlet property="textField" destination="e8e-nr-Vm0" id="OTJ-Vn-Jco"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Background">
+            <color red="0.14900000393390656" green="0.87099999189376831" blue="0.50599998235702515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextfieldBackground">
+            <color red="0.81960784313725488" green="0.84705882352941175" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
